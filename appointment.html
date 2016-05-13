@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" name="BAI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="white" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>雪佛兰——迈锐宝XL预约试驾</title>
+    <link rel="stylesheet" href="css/yuyue.css" />
+    <link rel="stylesheet" href="css/alert.css" />
+    <link rel="stylesheet" href="css/style-min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+    <div class="g-mn">
+        <div id="slideBox" class="m-slide">
+         <div class="bd">
+            <ul>
+                <li>
+                    <a href="index.php/ticket.html">
+                    <img  style="vertical-align:middle;"  src="images/1.jpg" alt="1" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img  style="vertical-align:middle;"  src="images/kv.jpg" alt="2" />
+                    </a>
+                </li>
+                        
+            </ul>
+         </div>
+         <div class="hd">
+            <ul></ul>
+         </div>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#slideBox",
+                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"leftLoop", 
+                autoPage:true,//自动分页
+                autoPlay:true //自动播放
+            });
+        </script>
+    </div>
+    <section>
+        <div id="meetting"><h2>预约试驾</h2></div>
+        <form id="ceshi">
+            <select name="car" id="choose_car">
+                <option>请选择车型</option>
+                <option>car1</option>
+                <option>car2</option>
+                <option>car3</option>
+            </select>            
+            <select name="city" id="choose_city">
+                <option>所在城市</option>
+                <option>city1</option>
+                <option>city2</option>
+                <option>city3</option>
+            </select>
+            <input type="text" placeholder="姓名"/>
+            <input type="tel" placeholder="请输入11位手机号码" maxlength="11"/>
+            <label><input type="tel" id="out_2" placeholder="请输入验证码" maxlength="6"><input id="out" type="button" value="发送验证码" onclick="sendMessage()" /></label>
+            <p>请输入正确<span>电话号码</span></p>
+            <a href="#"><input type="button" value="立即预约" id="rightnow"  /></a>
+        </form>
+    </section>
+    <footer>
+    <p>活动说明，请仔细阅读</p>
+    <div id="word">
+        <h1>活动说明</h1>
+        <div id="word_inner">一.活动概述<br>1.活动名称：预约雪佛兰迈锐宝XL试驾，xxM~xxM海量流量量红包等你拿；<br>2.活动时间：2016年月日—2016年月日；<br>3.截至机制：活动截至时间之前，有多少送多少；<br>4.活动范围：全国范围内移动、联通、电信均可参与；<br>5.参与平台：全国微信用户均可通过本活动页面参与；<br>6.到账时间：两个工作日。月末三天参加的，在次月2号充值<br>7.活动解释权：归雪佛兰汽车官方所有<br><br>二.活动参与流程<br>1.通过活动专属H5链接了解活动详情，非活动链接参与用户不赠送；<br>2.按要求填写信息，提交成功后即可领取流量</div >
+        <div id="last">由加加流量提供技术支持</div>
+        <div id="pic">关闭</div>
+    </div>
+    </footer>
+    </body>
+</html>
